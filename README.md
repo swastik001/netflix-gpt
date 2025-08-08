@@ -29,6 +29,10 @@
 -movies list
 -movie card
 -image cdn
+custom hook to fetch movies by category
+-gpt search page
+gpt search bar
+-Multi language Page
 
 
 
@@ -47,3 +51,4 @@
 -Netflix Gpt
 -search bar
 -movie Suggestion
+-gpt search feature

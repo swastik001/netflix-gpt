@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addNowPlayingMovies, addTopRatedMovies } from "../ulits/moviesSlice";
+import { addTopRatedMovies } from "../ulits/moviesSlice";
 import { API_OPTIONS } from "../ulits/constant";
 import { useEffect } from "react";
 
