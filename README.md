@@ -25,7 +25,11 @@
 -fetch data for trailer video
 -update store with trailer video data
 -embeded youtube video ,autoplay and mute
--
+-build secondary comp
+-movies list
+-movie card
+-image cdn
+
 
 
 # features
