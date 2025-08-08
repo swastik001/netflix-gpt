@@ -10,6 +10,9 @@ const Body = () => {
       element: <Browse />,
     },
   ]);
+
+  // this is kind of event-listner whenever user signs in/signs out
+
   return (
     <div>
       <RouterProvider router={appRouter} />
