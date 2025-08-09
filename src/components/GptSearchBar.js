@@ -62,15 +62,12 @@ Example: ["The Godfather", "Inception", "Titanic", "The Dark Knight", "Avatar", 
       // Parse the JSON array
       const gptMovies = JSON.parse(result.response.text());
 
-      console.log("Movies array:", gptMovies); // ["The Godfather", "Inception", ...]
-
       // this will give promise array right?why??todo
       const promiseArray = gptMovies.map(
         async (movie) => await searchMovieTMDB(movie)
       );
 
       const tmdbResults = await Promise.all(promiseArray);
-      console.log("yoooooo", tmdbResults);
       dispatch(
         addGptMovieResults({ movieNames: gptMovies, movieResults: tmdbResults })
       );

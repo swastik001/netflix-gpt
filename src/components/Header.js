@@ -56,7 +56,6 @@ const Header = () => {
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
 
-    console.log("Selected Language:", selectedLanguage);
     dispatch(changeLanguage(selectedLanguage));
   };
   return (
