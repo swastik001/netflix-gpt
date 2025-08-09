@@ -16,25 +16,27 @@
 -bugFix: display name and profile picture update
 -bugFix: redirection based on is login or not
 -unsubscribe to the onAuthStateChange Callback
+
 - Add harcodValues to constant file
--registered TMDB to get access token
--get now playing movies list 
--custom hook for now playing movie
--updates store with movie data
--Main and sec video container
--fetch data for trailer video
--update store with trailer video data
--embeded youtube video ,autoplay and mute
--build secondary comp
--movies list
--movie card
--image cdn
-custom hook to fetch movies by category
--gpt search page
-gpt search bar
--Multi language Page
-
-
+  -registered TMDB to get access token
+  -get now playing movies list
+  -custom hook for now playing movie
+  -updates store with movie data
+  -Main and sec video container
+  -fetch data for trailer video
+  -update store with trailer video data
+  -embeded youtube video ,autoplay and mute
+  -build secondary comp
+  -movies list
+  -movie card
+  -image cdn
+  custom hook to fetch movies by category
+  -gpt search page
+  gpt search bar
+  -Multi language Page
+  -gemini key
+  -gemini fetch setup
+  -added .env
 
 # features
 

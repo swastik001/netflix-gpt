@@ -1,12 +1,12 @@
 import React from "react";
 import GptSearchBar from "./GptSearchBar";
-import GptSearchSuggestions from "./GptSearchSuggestions";
+import GptMovieSuggestions from "./GptMovieSuggestions";
 import { BG_URL } from "../ulits/constant";
 
 const GptSearch = () => {
   return (
     <div>
-      <div className="absolute -z-10 inset-0">
+      <div className="fixed -z-10 inset-0">
         <img
           alt="hero-banner"
           className="w-full h-screen object-cover"
@@ -14,7 +14,7 @@ const GptSearch = () => {
         />
       </div>
       <GptSearchBar />
-      <GptSearchSuggestions />
+      <GptMovieSuggestions />
     </div>
   );
 };

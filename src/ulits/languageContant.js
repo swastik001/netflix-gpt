@@ -1,5 +1,3 @@
-import GptSearch from "../components/GptSearch";
-
 export const lang = {
   en: {
     search: "Search",

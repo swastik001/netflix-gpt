@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../ulits/userSlice";
 import { LOGO, SUPPORTED_LANGUAGES } from "../ulits/constant";
-import { toggleGptSearchView } from "../ulits/gptSlice";
+import { addGptMovieResults, toggleGptSearchView } from "../ulits/gptSlice";
 import { changeLanguage } from "../ulits/configSlice";
 
 const Header = () => {
@@ -51,6 +51,7 @@ const Header = () => {
   }, []);
   function handleGptSearchClick() {
     dispatch(toggleGptSearchView());
+    dispatch(addGptMovieResults({ movieNames: null, movieResults: null }));
   }
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
@@ -62,7 +63,7 @@ const Header = () => {
     <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-between items-center">
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
-        <div className="flex p-2 ">
+        <div className="flex p-2 items-end">
           {showGptSearch && (
             <select
               className="bg-gray-900 m-2 text-white p-2 rounded-lg"
@@ -78,14 +79,14 @@ const Header = () => {
             </select>
           )}
           <button
-            className="py-2 px-4 m-2 bg-purple-800 mx-4 rounded-lg"
+            className="py-2 px-4 mt-2 bg-purple-800 mx-4 rounded-lg"
             onClick={handleGptSearchClick}
           >
             {showGptSearch ? "Home page" : "GPT Search"}
           </button>
           <img
             alt="user-icon"
-            className="w-12 h-12 rounded-xl"
+            className="w-12 h-10 rounded-xl"
             src={user.photoURL || "https://example.com/default-profile.png"}
           />
           <button
